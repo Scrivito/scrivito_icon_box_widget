@@ -1,0 +1,3 @@
+class IconBoxWidget < Widget
+
+end
