@@ -1,11 +1,12 @@
 <h4>Icon</h4>
 <div class="alert alert-info">
- Possible Icons can be found at
+ <p>Possible Icons can be found at
  <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">
    Font Awesome
- </a>
+ </a>.</p>
+ <p>Use only the name of the icon without fa. For Example the icon fa fa-car, use only car.</p>
 </div>
-<%= cms_tag(:div, widget, :icon) %>
+<%= render "icon_box_widget/partials/icon_picker", widget: widget, attribute: :icon %>
 
 <h4>Size</h4>
 <%= render "icon_box_widget/partials/size_picker", widget: widget, attribute: :size %>

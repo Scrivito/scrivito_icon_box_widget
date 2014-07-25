@@ -1,0 +1,10 @@
+<% IconBoxWidget.icons.each do |icon| %>
+  <%= cms_tag(:button, widget, attribute,
+    class: "btn button-picker #{widget.send(attribute) == icon ? "selected" : ""}",
+    :"data-picker-content" => icon, :"data-editor" => 'button-picker') do %>
+      <i class="fa fa-<%= icon %>"></i> <%= icon %>
+  <% end %>
+<% end %>
+
+<h4>Anderes Icon</h4>
+<%= cms_tag(:div, widget, attribute) %>

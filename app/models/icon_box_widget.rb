@@ -8,4 +8,7 @@ class IconBoxWidget < Widget
     ["small","medium","large"]
   end
 
+  def self.icons
+    ["send","car","sliders","tree","bell","certificate","cloud","comment","dashboard","female","male","flag","globe","heart","leaf","plane","refresh","rocket","question","sign-in","sign-out","star","unlock"]
+  end
 end

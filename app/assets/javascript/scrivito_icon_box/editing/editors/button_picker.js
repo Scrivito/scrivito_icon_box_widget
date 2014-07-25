@@ -7,7 +7,7 @@
       cmsField.addClass('selected');
       cmsField.siblings().removeClass('selected');
 
-      text = $.trim(cmsField.text());
+      text = cmsField.data('picker-content');
 
       return cmsField.scrivito('save', text);
     });
