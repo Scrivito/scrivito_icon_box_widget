@@ -31,7 +31,7 @@
   line-height: 52px;
 }
 
-[data-scrivito-private-widget-description-for-editor="IconBoxWidget"] {
+[data-scrivito-widget-obj-class="IconBoxWidget"] {
   float: left;
   z-index: 100;
 }

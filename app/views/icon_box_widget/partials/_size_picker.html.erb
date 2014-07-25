@@ -1,0 +1,5 @@
+<% IconBoxWidget.sizes.each do |size| %>
+  <%= cms_tag(:button, widget, attribute, class: "btn web_button button-picker #{widget.send(attribute) == size ? "selected" : ""}") do %>
+    <%= size %>
+  <% end %>
+<% end %>

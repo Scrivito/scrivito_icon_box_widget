@@ -1,0 +1,9 @@
+.button-picker {
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 0 0 2px black;
+}
+
+.button-picker.selected {
+  box-shadow: 0 0 3px #444;
+}

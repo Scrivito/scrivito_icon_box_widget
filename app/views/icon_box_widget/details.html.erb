@@ -7,11 +7,11 @@
 </div>
 <%= cms_tag(:div, widget, :icon) %>
 
-<h4>Color</h4>
-<%= cms_tag(:div, widget, :color) %>
-
 <h4>Size</h4>
-<%= cms_edit_enum(widget, :size) %>
+<%= render "icon_box_widget/partials/size_picker", widget: widget, attribute: :size %>
+
+<h4>Color</h4>
+  <%= render "icon_box_widget/partials/color_picker", widget: widget, attribute: :color %>
 
 <h4>Background Color</h4>
-<%= cms_tag(:div, widget, :background_color) %>
+<%= render "icon_box_widget/partials/color_picker", widget: widget, attribute: :background_color %>
