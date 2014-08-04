@@ -34,6 +34,9 @@ If yout want to define your colors for the icons, add the evnironment variable `
 
 Change with colors of your wish.
 
+## Changelog
+See [Changelog](https://github.com/gertimon/scrivito_icon_box/blob/master/CHANGELOG.md) for more
+
 ## Contributing
 
 1. Fork it ( https://github.com/infopark/scrivito_icon_box/merge_tags/fork )
