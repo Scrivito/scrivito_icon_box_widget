@@ -15,9 +15,12 @@ Add this lines to your application's `Gemfile`:
 Add this line to your application Stylesheet manifest:
 
     *= require scrivito_icon_box/application
+
+Add this line to your editing Stylesheet manifest:
+
     *= require scrivito_icon_box/editing
 
-Add this line to your application Javascript manifest:
+Add this line to your editing Javascript manifest:
 
     //= require scrivito_icon_box/editing
 
