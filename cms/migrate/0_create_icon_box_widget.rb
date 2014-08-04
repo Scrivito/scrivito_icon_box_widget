@@ -3,6 +3,7 @@ class CreateIconBoxWidget < ::Scrivito::Migration
     Scrivito::ObjClass.create(
       name: 'IconBoxWidget',
       type: 'publication',
+      is_binary: false,
       title: 'Icon Box Widget',
       attributes: [
         {:name=>"icon", :type=>"string"},
