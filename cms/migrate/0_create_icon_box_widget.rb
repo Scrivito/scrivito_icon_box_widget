@@ -1,6 +1,6 @@
 class CreateIconBoxWidget < ::Scrivito::Migration
   def up
-    create_obj_class(
+    Scrivito::ObjClass.create(
       name: 'IconBoxWidget',
       type: 'publication',
       title: 'Icon Box Widget',
