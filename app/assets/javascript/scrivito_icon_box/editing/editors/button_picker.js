@@ -11,8 +11,7 @@
       initFunction: function(index, elem) {},
       
       // set function triggert on click
-      clickFunction: function(event) {
-        var cmsField = $(this);
+      clickFunction: function(cmsField) {
         var text = cmsField.data('picker-content');
 
         cmsField.addClass('selected');
@@ -25,7 +24,7 @@
     // Set click event
     scrivito.on('load', function() {
       return $('body').on('click', buttonPickerEditor.selector, function(event) {
-        buttonPickerEditor.clickFunction.bind(event)
+        buttonPickerEditor.clickFunction($(event.target));
       });
     });
   });
