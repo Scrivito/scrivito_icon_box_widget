@@ -4,6 +4,7 @@
 
 * No ENV variable needed. Config is used instead.
 * Remove floating
+* Add option for circle or square shape, filled or as outline.
 
 ## 0.0.4
 

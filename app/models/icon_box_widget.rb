@@ -12,8 +12,20 @@ class IconBoxWidget < Widget
     ["small","medium","large"]
   end
 
+  def self.styles
+    ["circle","square","filled-circle","filled-square"]
+  end
+
   def self.icons
     ["plus","minus","warning","paw","send","car","sliders","tree","bell","certificate","cloud","comment","dashboard","female","male","flag","globe","heart","leaf","plane","refresh","rocket","question","star","unlock"]
+  end
+
+  def background_style
+    if self.style && self.style.start_with?('filled')
+      "background-color: #{self.background_color}"
+    elsif self.style
+      "border: 3px solid #{self.background_color}"
+    end
   end
 
   private 
