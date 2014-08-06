@@ -1,5 +1,11 @@
 # Changelog: Scrivito Icon Box
 
+## 0.0.4
+
+* Fix: Click Handler for Editor is not working correct
+* Change default icons
+* Add `transparent` to default colors
+
 ## 0.0.3
 
 * Use new migration api
