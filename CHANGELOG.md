@@ -1,5 +1,9 @@
 # Changelog: Scrivito Icon Box
 
+## 0.0.5
+
+* No ENV variable needed. Overwrite model if other colors needed.
+
 ## 0.0.4
 
 * Fix: Click Handler for Editor is not working correct

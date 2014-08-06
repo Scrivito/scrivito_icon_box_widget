@@ -1,7 +1,7 @@
 class IconBoxWidget < Widget
 
   def self.colors
-    (ENV['ICON_BOX_COLORS'] || "transparent,#000000,#585858,#d9d9d9,#FFFFFF,#003380,#6699CC,#CC0000").split(',')
+    %w|transparent #000000 #585858 #d9d9d9 #FFFFFF #003380 #6699CC #CC0000|
   end
 
   def self.sizes
