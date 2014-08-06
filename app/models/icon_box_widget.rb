@@ -1,7 +1,7 @@
 class IconBoxWidget < Widget
 
   def self.colors
-    (ENV['ICON_BOX_COLORS'] || "black,#585858,#d9d9d9,white,#003380,#6699cc,#cc0000").split(',')
+    (ENV['ICON_BOX_COLORS'] || "transparent,#000000,#585858,#d9d9d9,#FFFFFF,#003380,#6699CC,#CC0000").split(',')
   end
 
   def self.sizes
@@ -9,6 +9,6 @@ class IconBoxWidget < Widget
   end
 
   def self.icons
-    ["send","car","sliders","tree","bell","certificate","cloud","comment","dashboard","female","male","flag","globe","heart","leaf","plane","refresh","rocket","question","sign-in","sign-out","star","unlock"]
+    ["plus","minus","warning","paw","send","car","sliders","tree","bell","certificate","cloud","comment","dashboard","female","male","flag","globe","heart","leaf","plane","refresh","rocket","question","star","unlock"]
   end
 end
