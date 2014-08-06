@@ -31,11 +31,18 @@ And then execute:
     $ rake cms:migrate
     $ rake cms:migrate:publish
 
-If yout want to define your colors for the icons, add the evnironment variable `ICON_BOX_COLORS` to your `.env` file:
+## Set Colors
 
-    ICON_BOX_COLORS = "red,green,blue,orange,yellow"
+If yout want to define your colors for the icons, add the following lines to the file `config/config.yml`:
 
-Change with colors of your wish.
+    scrivito_icon_box:
+      colors: "red green blue"
+
+If you have done this, run the geneartor for the initializer.
+
+    rails g scrivito_icon_box
+
+This will copy the initializer script to `config/initializer`
 
 ## Changelog
 See [Changelog](https://github.com/gertimon/scrivito_icon_box/blob/master/CHANGELOG.md) for more

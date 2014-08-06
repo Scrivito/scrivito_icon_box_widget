@@ -14,8 +14,8 @@
       clickFunction: function(cmsField) {
         var text = cmsField.data('picker-content');
 
-        cmsField.addClass('selected');
-        cmsField.siblings().removeClass('selected');
+        cmsField.addClass('activated');
+        cmsField.siblings().removeClass('activated');
 
         return cmsField.scrivito('save', text);
       },

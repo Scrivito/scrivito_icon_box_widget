@@ -2,7 +2,8 @@
 
 ## 0.0.5
 
-* No ENV variable needed. Overwrite model if other colors needed.
+* No ENV variable needed. Config is used instead.
+* Remove floating
 
 ## 0.0.4
 
