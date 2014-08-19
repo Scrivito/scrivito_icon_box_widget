@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    scrivito_icon_box (0.0.5)
+    scrivito_icon_box (0.0.6)
       bundler
       font-awesome-rails
       scrivito_sdk
@@ -108,7 +108,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (1.2.1)
+    tzinfo (1.2.2)
       thread_safe (~> 0.1)
 
 PLATFORMS
