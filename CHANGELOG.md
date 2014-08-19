@@ -1,5 +1,9 @@
 # Changelog: Scrivito Icon Box
 
+## 0.0.6
+
+* Fix: Icons sometimes not centered
+
 ## 0.0.5
 
 * No ENV variable needed. Config is used instead.
