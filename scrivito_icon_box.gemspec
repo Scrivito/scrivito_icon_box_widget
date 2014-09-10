@@ -8,12 +8,14 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = "scrivito_icon_box"
   s.version     = ScrivitoIconBox::VERSION
-  s.authors     = ["Gert Geidel"]
-  s.email       = ["gert.geidel@infopark.de"]
-  s.homepage    = "https://scrivito.com"
+
+  s.authors     = ["Scrivito"]
+  s.email       = ["support@scrivito.com"]
+  s.homepage    = "https://www.scrivito.com"
+  
   s.summary     = "Widget for scrivito to display an icon in a box."
   s.description = "Widget for scrivito to display an icon in a box."
-  s.license     = "LPGL-3"
+  s.license     = "LGPL-3.0"
   
   s.files = Dir[
     "{app,lib,cms}/**/*",
