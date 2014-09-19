@@ -1,9 +1,9 @@
-(function($, app) {
+(function($, App) {
   'use strict';
 
   $(function() {
 
-    app.buttonPickerEditor = {
+    App.buttonPickerEditor = {
       // set selector for Editor
       selector: '.button-picker',
       
