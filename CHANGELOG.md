@@ -1,8 +1,10 @@
 # Changelog: Scrivito Icon Box
 
-## 0.0.6
+## 1.0.0
 
+* Change author to Scrivito
 * Fix: Icons sometimes not centered
+* Refactor: Java Script
 
 ## 0.0.5
 
