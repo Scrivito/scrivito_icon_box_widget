@@ -1,5 +1,5 @@
 <% IconBoxWidget.sizes.each do |size| %>
-  <%= cms_tag(:button, widget, attribute, class: "scrivito_button button-picker #{widget.send(attribute) == size ? "activated" : ""}", :"data-picker-content" => size, :"data-editor" => 'button-picker') do %>
+  <%= scrivito_tag(:button, widget, attribute, class: "scrivito_button button-picker #{widget.send(attribute) == size ? "activated" : ""}", :"data-picker-content" => size, :"data-editor" => 'button-picker') do %>
     <%= size %>
   <% end %>
 <% end %>

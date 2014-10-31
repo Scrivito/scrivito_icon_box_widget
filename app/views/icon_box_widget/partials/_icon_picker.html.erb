@@ -1,5 +1,5 @@
 <% IconBoxWidget.icons.each do |icon| %>
-  <%= cms_tag(:button, widget, attribute,
+  <%= scrivito_tag(:button, widget, attribute,
     class: "scrivito_button button-picker #{widget.send(attribute) == icon ? "activated" : ""}",
     :"data-picker-content" => icon, :"data-editor" => 'button-picker') do %>
       <i class="fa fa-<%= icon %>"></i> <%= icon %>
@@ -7,4 +7,4 @@
 <% end %>
 
 <h4>Anderes Icon</h4>
-<%= cms_tag(:div, widget, attribute) %>
+<%= scrivito_tag(:div, widget, attribute) %>
