@@ -1,13 +1,13 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "scrivito_icon_box/version"
+require "scrivito_icon_box_widget/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = "scrivito_icon_box"
-  s.version     = ScrivitoIconBox::VERSION
+  s.name        = "scrivito_icon_box_widget"
+  s.version     = ScrivitoIconBoxWidget::VERSION
 
   s.authors     = ["Scrivito"]
   s.email       = ["support@scrivito.com"]

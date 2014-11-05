@@ -1,5 +1,9 @@
 # Changelog: Scrivito Icon Box
 
+## 1.0.1
+
+* Rename to new naming convention
+
 ## 1.0.0
 
 * Change author to Scrivito

@@ -1,28 +1,30 @@
-scrivito_icon_box
-=================
+# scrivito_icon_box
 
-[![Gem Version](https://badge.fury.io/rb/scrivito_icon_box.svg)](http://badge.fury.io/rb/scrivito_icon_box)
-[![Code Climate](https://codeclimate.com/github/gertimon/scrivito_icon_box.png)](https://codeclimate.com/github/gertimon/scrivito_icon_box)
+[![Gem Version](https://badge.fury.io/rb/scrivito_icon_box_widget.svg)](http://badge.fury.io/rb/scrivito_icon_box_widget)
+[![Code Climate](https://codeclimate.com/github/gertimon/scrivito_icon_box_widget.png)](https://codeclimate.com/github/gertimon/scrivito_icon_box_widget)
 
+## Description
 
-A Widget for Scrivito showing an icon in a box
+A Widget for Scrivito showing an icon in a box. Color, Backgroundcolor, the icon, size and the shape can be selected. For icons, font awesome is used.
+
+## Installation
 
 Add this lines to your application's `Gemfile`:
 
-    gem 'scrivito_icon_box'
+    gem 'scrivito_icon_box_widget'
     gem 'font-awesome-rails'
 
 Add this line to your application Stylesheet manifest:
 
-    *= require scrivito_icon_box/application
+    *= require icon_box_widget/application
 
 Add this line to your editing Stylesheet manifest:
 
-    *= require scrivito_icon_box/editing
+    *= require icon_box_widget/editing
 
 Add this line to your editing Javascript manifest:
 
-    //= require scrivito_icon_box/editing
+    //= require icon_box_widget/editing
 
 And then execute:
 
@@ -31,25 +33,26 @@ And then execute:
     $ rake cms:migrate
     $ rake cms:migrate:publish
 
-## Set Colors
+## Setting Colors for your layout
 
 If yout want to define your colors for the icons, add the following lines to the file `config/config.yml`:
 
-    scrivito_icon_box:
+    scrivito_icon_box_widget:
       colors: "red green blue"
 
 If you have done this, run the geneartor for the initializer.
 
-    rails g scrivito_icon_box
+    rails g scrivito_icon_box_widget
 
 This will copy the initializer script to `config/initializer`
 
 ## Changelog
-See [Changelog](https://github.com/gertimon/scrivito_icon_box/blob/master/CHANGELOG.md) for more
+
+See [Changelog](https://github.com/scrivito/scrivito_icon_box_widget/blob/master/CHANGELOG.md) for more details.
 
 ## Contributing
 
-1. Fork it ( https://github.com/infopark/scrivito_icon_box/merge_tags/fork )
+1. Fork it ( https://github.com/scrivito/scrivito_icon_box_widget/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
