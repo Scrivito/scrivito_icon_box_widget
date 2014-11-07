@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.license     = "LGPL-3.0"
   
   s.files = Dir[
-    "{app,lib,cms}/**/*",
+    "{app,lib,scrivito}/**/*",
     "LICENSE",
     "Rakefile"
   ]
