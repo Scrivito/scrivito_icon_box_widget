@@ -29,9 +29,9 @@ Add this line to your editing Javascript manifest:
 And then execute:
 
     $ bundle
-    $ rake cms:migrate:install
-    $ rake cms:migrate
-    $ rake cms:migrate:publish
+    $ rake scrivito:migrate:install
+    $ rake scrivito:migrate
+    $ rake scrivito:migrate:publish
 
 ## Setting Colors for your layout
 
