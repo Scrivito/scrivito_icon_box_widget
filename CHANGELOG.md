@@ -1,5 +1,9 @@
 # Changelog: Scrivito Icon Box
 
+## 1.0.3
+
+* Fix: Some missing renamings
+
 ## 1.0.1
 
 * Rename to new naming convention
