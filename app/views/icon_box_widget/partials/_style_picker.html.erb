@@ -1,5 +1,0 @@
-<% IconBoxWidget.styles.each do |style| %>
-  <%= scrivito_tag(:button, widget, attribute, class: "scrivito_button button-picker #{widget.send(attribute) == style ? "activated" : ""}", :"data-picker-content" => style, :"data-editor" => 'button-picker') do %>
-    <%= style %>
-  <% end %>
-<% end %>
