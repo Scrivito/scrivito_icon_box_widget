@@ -1,5 +1,9 @@
 # Changelog: Scrivito Icon Box
 
+## 1.1.0
+
+* Use scrivito advanced editors gem
+
 ## 1.0.3
 
 * Fix: Some missing renamings
