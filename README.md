@@ -12,6 +12,7 @@ A Widget for Scrivito showing an icon in a box. Color, Backgroundcolor, the icon
 Add this lines to your application's `Gemfile`:
 
     gem 'scrivito_icon_box_widget'
+    gem 'scrivito_advanced_editors'
     gem 'font-awesome-rails'
 
 Add this line to your application Stylesheet manifest:
