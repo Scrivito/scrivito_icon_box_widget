@@ -1,25 +1,16 @@
-<h4>Icon</h4>
-<%= scrivito_toggle_button_editor(widget, :icon, IconBoxWidget.icons) %>
+<div class="details-view">
+  <h4>Icon</h4>
+  <%= render 'icon_box_widget/partials/icons_picker', widget: widget, attribute: :icon %>
 
-<h4>Different Icon</h4>
-<div class="alert alert-info">
-  <p>More Icons can be found at
-    <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><strong>Font Awesome</strong></a>.
-  </p>
-  <p>
-   Use only the name of the icon without fa. For Example the icon <i>fa fa-car</i>, use only <strong>car</strong>
- </p>
+  <h4>Size</h4>
+  <%= scrivito_toggle_button_editor(widget, :size) %>
+
+  <h4>Style</h4>
+  <%= scrivito_toggle_button_editor(widget, :style) %>
+
+  <h4>Icon Color</h4>
+  <%= render 'icon_box_widget/partials/color_picker', widget: widget, attribute: :color %>
+
+  <h4>Background Color</h4>
+  <%= render 'icon_box_widget/partials/color_picker', widget: widget, attribute: :background_color %>
 </div>
-<%= scrivito_tag(:div, widget, :icon) %>
-
-<h4>Size</h4>
-<%= scrivito_toggle_button_editor(widget, :size) %>
-
-<h4>Style</h4>
-<%= scrivito_toggle_button_editor(widget, :style) %>
-
-<h4>Icon Color</h4>
-<%= render 'icon_box_widget/partials/color_picker', widget: widget, attribute: :color %>
-
-<h4>Background Color</h4>
-<%= render 'icon_box_widget/partials/color_picker', widget: widget, attribute: :background_color %>
