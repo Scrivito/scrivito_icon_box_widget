@@ -42,11 +42,11 @@ You need a method `selectable_color_classes(obj_name, field_name)` in your obj.r
 Than you need a style for all your defined classes.
 
     .red {
-      background-color: red;
+      background-color: red !important;
     }
 
     .scrivito-icon-box i.red {
-      background-color: transparent;
+      background-color: transparent !important;
       font-color: red;
     }
 
