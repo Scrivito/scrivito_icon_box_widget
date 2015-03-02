@@ -19,33 +19,50 @@ Add this line to your application Stylesheet manifest:
 
     *= require icon_box_widget/application
 
-Add this line to your editing Stylesheet manifest:
-
-    *= require icon_box_widget/editing
-
-Add this line to your editing Javascript manifest:
-
-    //= require icon_box_widget/editing
-
 And then execute:
 
     $ bundle
     $ rake scrivito:migrate:install
+
+Before running the migration you can change the fields for styles or sizes if needed. So you can add styles for border-style or more selectable styles. Be aware that you have to define the styles in your css.
+
+Than run the migration with:
+
     $ rake scrivito:migrate
     $ rake scrivito:migrate:publish
 
 ## Setting Colors for your layout
 
-If yout want to define your colors for the icons, add the following lines to the file `config/config.yml`:
+You need a method `selectable_color_classes(obj_name, field_name)` in your obj.rb. It returns an Array for your selectable colors.
 
-    scrivito_icon_box_widget:
-      colors: "red green blue"
+    def selectable_color_classes(obj_name, field_name)
+      return ["red","green","blue"]
+    end
 
-If you have done this, run the geneartor for the initializer.
+Than you need a style for all your defined classes.
 
-    rails g scrivito_icon_box_widget
+    .red {
+      background-color: red;
+    }
 
-This will copy the initializer script to `config/initializer`
+    .scrivito-icon-box i.red {
+      background-color: transparent;
+      font-color: red;
+    }
+
+If you want to use a not filled styled, you can select the correct style in defaultsview. But you have to add the css styles to your css.
+
+    .red {
+      border-color: red;
+    }
+
+If you want to change the borderstyle, add the following to your css:
+
+    .scrivito-icon-box.circle,
+    .scrivito-icon-box.square {
+      border-width: 5px;
+      border-style: double;
+    }
 
 ## Changelog
 
