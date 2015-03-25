@@ -1,10 +1,10 @@
 class IconBoxWidget < Widget
 
-  def self.colors
-    if Rails.configuration.respond_to?(:icon_box_colors)
-      Rails.configuration.icon_box_colors.split(" ")
+  def selectable_color_classes(class_name, attribute)
+    if Obj.respond_to?('selectable_color_classes')
+      Obj.selectable_color_classes(class_name, attribute)
     else
-      IconBoxWidget.fallback_colors.split(" ")
+      IconBoxWidget.fallback_colors
     end
   end
 
@@ -18,6 +18,6 @@ class IconBoxWidget < Widget
 
   private 
   def self.fallback_colors
-    "transparent #000000 #585858 #d9d9d9 #FFFFFF #003380 #6699CC #CC0000"
+    %w(transparent black gray light-gray red green blue yellow)
   end
 end

@@ -12,12 +12,14 @@ A Widget for Scrivito showing an icon in a box. Color, Backgroundcolor, the icon
 Add this lines to your application's `Gemfile`:
 
     gem 'scrivito_icon_box_widget'
-    gem 'scrivito_advanced_editors'
-    gem 'font-awesome-rails'
 
 Add this line to your application Stylesheet manifest:
 
-    *= require icon_box_widget/application
+    *= require scrivito_icon_box_widget
+
+Add this line to your application Javascript manifest:
+
+    *= require scrivito_icon_box_widget
 
 And then execute:
 
@@ -33,7 +35,7 @@ Than run the migration with:
 
 ## Setting Colors for your layout
 
-You need a method `selectable_color_classes(obj_name, field_name)` in your obj.rb. It returns an Array for your selectable colors.
+You need a method `selectable_color_classes(obj_name, field_name)` in your obj.rb. It returns an Array for your selectable color classes.
 
     def selectable_color_classes(obj_name, field_name)
       return ["red","green","blue"]
@@ -41,12 +43,11 @@ You need a method `selectable_color_classes(obj_name, field_name)` in your obj.r
 
 Than you need a style for all your defined classes.
 
-    .red {
+    div.red {
       background-color: red !important;
     }
 
     .scrivito-icon-box i.red {
-      background-color: transparent !important;
       font-color: red;
     }
 
