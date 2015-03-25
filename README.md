@@ -35,9 +35,9 @@ Than run the migration with:
 
 ## Setting Colors for your layout
 
-You need a method `selectable_color_classes(obj_name, field_name)` in your obj.rb. It returns an Array for your selectable color classes.
+You need the instance method `selectable_color_classes(obj_name, field_name)` in your obj.rb. It returns an Array for your selectable color classes.
 
-    def selectable_color_classes(obj_name, field_name)
+    def self.selectable_color_classes(obj_name, field_name)
       return ["red","green","blue"]
     end
 
