@@ -26,14 +26,15 @@ And then execute:
     $ bundle
     $ rake scrivito:migrate:install
 
-Before running the migration you can change the fields for styles or sizes if needed. So you can add styles for border-style or more selectable styles. Be aware that you have to define the styles in your css.
-
-Than run the migration with:
+Some values are set during the migration. If you wish to change them you need to change the migration or create a new one. More un this subject you can find under customization.
 
     $ rake scrivito:migrate
     $ rake scrivito:migrate:publish
 
-## Setting Colors for your layout
+## Customization
+
+Before running the migration you can change the fields for styles or sizes if needed. So you can add styles for border-style or more selectable styles. Be aware that you have to define the styles in your css.
+
 
 You need the instance method `selectable_color_classes(obj_name, field_name)` in your obj.rb. It returns an Array for your selectable color classes.
 
