@@ -33,33 +33,41 @@
 
 /* icon colors */
 i.transparent {
+  background-color: transparent !important;
   color: transparent !important;
 }
 
 i.black {
+  background-color: transparent !important;
   color: #33312d !important;
 }
 
 i.gray {
+  background-color: transparent !important;
   color: #a0a0a0 !important;
 }
 
 i.light-gray {
+  background-color: transparent !important;
   color: #eee !important;
 }
 
 i.red {
+  background-color: transparent !important;
   color: #c5463f !important;
 }
 
 i.green {
+  background-color: transparent !important;
   color: #439439 !important;
 }
 
 i.blue {
+  background-color: transparent !important;
   color: #3f86ac !important;
 }
 
 i.yellow {
+  background-color: transparent !important;
   color: #e1d00e !important;
 }

@@ -19,7 +19,7 @@ Add this line to your application Stylesheet manifest:
 
 Add this line to your application Javascript manifest:
 
-    *= require scrivito_icon_box_widget
+    //= require scrivito_icon_box_widget
 
 And then execute:
 
