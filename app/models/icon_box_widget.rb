@@ -1,4 +1,9 @@
 class IconBoxWidget < Widget
+  attribute :icon, :string
+  attribute :color, :string
+  attribute :background_color, :string
+  attribute :size, :enum, values: ["small","medium","large"]
+  attribute :style, :enum, values: ["circle","square","filled-circle","filled-square"]
 
   def selectable_color_classes(class_name, attribute)
     if Obj.respond_to?('selectable_color_classes')
