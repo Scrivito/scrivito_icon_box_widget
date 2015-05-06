@@ -1,34 +1,47 @@
 /* background colors */
+.scrivito-icon-box.square,
+.scrivito-icon-box.cricle {
+  border: 3px solid transparent;
+}
+
 .transparent {
   background-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .black {
   background-color: #33312d !important;
+  border-color: #33312d !important;
 }
 
 .gray {
   background-color: #a0a0a0 !important;
+  border-color: #a0a0a0 !important;
 }
 
 .light-gray {
   background-color: #eee !important;
+  border-color: #eee !important;
 }
 
 .red {
   background-color: #c5463f !important;
+  border-color: #c5463f !important;
 }
 
 .green {
   background-color: #439439 !important;
+  border-color: #439439 !important;
 }
 
 .blue {
   background-color: #3f86ac !important;
+  border-color: #3f86ac !important;
 }
 
 .yellow {
   background-color: #e1d00e !important;
+  border-color: #e1d00e !important;
 }
 
 /* icon colors */
