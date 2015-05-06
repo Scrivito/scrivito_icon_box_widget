@@ -21,20 +21,7 @@ Add this line to your application Javascript manifest:
 
     //= require scrivito_icon_box_widget
 
-And then execute:
-
-    $ bundle
-    $ rake scrivito:migrate:install
-
-Some values are set during the migration. If you wish to change them you need to change the migration or create a new one. More un this subject you can find under customization.
-
-    $ rake scrivito:migrate
-    $ rake scrivito:migrate:publish
-
 ## Customization
-
-Before running the migration you can change the fields for styles or sizes if needed. So you can add styles for border-style or more selectable styles. Be aware that you have to define the styles in your css.
-
 
 You need the instance method `selectable_color_classes(obj_name, field_name)` in your obj.rb. It returns an Array for your selectable color classes.
 
@@ -44,7 +31,7 @@ You need the instance method `selectable_color_classes(obj_name, field_name)` in
 
 Than you need a style for all your defined classes.
 
-    div.red {
+    .scrivito-icon-box.red {
       background-color: red !important;
     }
 
@@ -54,7 +41,7 @@ Than you need a style for all your defined classes.
 
 If you want to use a not filled styled, you can select the correct style in defaultsview. But you have to add the css styles to your css.
 
-    .red {
+    .scrivito-icon-box.red {
       border-color: red;
     }
 
