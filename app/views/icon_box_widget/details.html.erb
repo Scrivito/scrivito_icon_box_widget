@@ -1,16 +1,19 @@
-<div class="details-view">
-  <h4>Icon</h4>
+<%= scrivito_details_for 'Icon' do %>
   <%= render 'icon_box_widget/partials/icons_picker', widget: widget, attribute: :icon %>
+<% end %>
 
-  <h4>Size</h4>
+<%= scrivito_details_for 'Size' do %>
   <%= scrivito_toggle_button_editor(widget, :size) %>
+<% end %>
 
-  <h4>Style</h4>
+<%= scrivito_details_for 'Style' do %>
   <%= scrivito_toggle_button_editor(widget, :style) %>
+<% end %>
 
-  <h4>Icon Color</h4>
+<%= scrivito_details_for 'Icon Color' do %>
   <%= render 'icon_box_widget/partials/color_picker', widget: widget, attribute: :color %>
+<% end %>
 
-  <h4>Background Color</h4>
+<%= scrivito_details_for 'Background Color' do %>
   <%= render 'icon_box_widget/partials/color_picker', widget: widget, attribute: :background_color %>
-</div>
+<% end %>
