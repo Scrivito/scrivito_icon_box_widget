@@ -139,3 +139,6 @@ PLATFORMS
 DEPENDENCIES
   rake
   scrivito_icon_box_widget!
+
+BUNDLED WITH
+   1.10.3

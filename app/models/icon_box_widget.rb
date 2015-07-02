@@ -1,9 +1,9 @@
 class IconBoxWidget < Widget
-  attribute :icon, :string
+  attribute :icon, :string, default: 'leaf'
   attribute :color, :string
   attribute :background_color, :string
-  attribute :size, :enum, values: ["small","medium","large"]
-  attribute :style, :enum, values: ["circle","square","filled-circle","filled-square"]
+  attribute :size, :enum, values: ["small","medium","large"], default: 'large'
+  attribute :style, :enum, values: ["circle","square","filled-circle","filled-square"], default: 'circle'
 
   def selectable_color_classes(class_name, attribute)
     if Obj.respond_to?('selectable_color_classes')
@@ -21,7 +21,7 @@ class IconBoxWidget < Widget
     self.background_color
   end
 
-  private 
+  private
   def self.fallback_colors
     %w(transparent black gray light-gray red green blue yellow)
   end
