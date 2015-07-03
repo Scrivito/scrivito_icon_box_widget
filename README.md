@@ -39,7 +39,9 @@ Than you need a style for all your defined classes.
       font-color: red;
     }
 
-If you want to use a not filled styled, you can select the correct style in defaultsview. But you have to add the css styles to your css.
+Caution: if you use also the section widget, your style for the icon should set an `background-color: transparent;` to avoid problems.
+
+If you want to use a not filled style, you can select the correct style in defaultsview. But you have to add the css styles to your css.
 
     .scrivito-icon-box.red {
       border-color: red;
