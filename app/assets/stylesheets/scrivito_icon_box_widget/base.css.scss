@@ -15,3 +15,14 @@
   line-height: 50px;
   text-align: center;
 }
+
+.scrivito_dialog .button_list button[data-editor="scrivito-toggle-button"].icon-select {
+  padding: 6px 18px;
+  font-size: 10px;
+  line-height: 10px;
+  .fa {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 4px;
+  }
+}

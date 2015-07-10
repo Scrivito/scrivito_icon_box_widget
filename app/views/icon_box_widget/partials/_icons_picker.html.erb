@@ -1,8 +1,4 @@
-<%= scrivito_toggle_button_editor(widget, attribute, IconBoxWidget.icons) do |elem|
-  scrivito_tag(:button, widget, attribute, class: elem == widget.send(attribute) ? 'active' : '', data: {editor: 'scrivito-toggle-button', content: elem}) do
-    content_tag(:i, '', :class => "fa fa-#{elem}") + " " + elem
-  end
-end %>
+<%= scrivito_toggle_button_editor(widget, attribute, IconBoxWidget.icons) %>
 <hr />
 <h4>Icon not in List</h4>
 <div class="alert alert-info">
