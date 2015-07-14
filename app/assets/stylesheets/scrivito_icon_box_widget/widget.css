@@ -15,7 +15,7 @@
 
 .scrivito-icon-box.circle,
 .scrivito-icon-box.filled-circle {
-  border-radius: 70px;
+  border-radius: 50%;
   text-align: center;
 }
 
@@ -29,21 +29,18 @@
 .scrivito-icon-box.small i {
   font-size: 30px;
   height: 30px;
-  width: 30px;
   line-height: 30px;
 }
 
 .scrivito-icon-box.medium i {
   font-size: 50px;
   height: 50px;
-  width: 50px;
   line-height: 50px;
 }
 
 .scrivito-icon-box.large i {
   font-size: 70px;
   height: 70px;
-  width: 70px;
   line-height: 70px;
 }
 
