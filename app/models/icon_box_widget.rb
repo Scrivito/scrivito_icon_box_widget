@@ -24,15 +24,22 @@ class IconBoxWidget < Widget
     end
   end
 
-  def background_class
-    self.background_color
+  def background_classes
+    c = ["scrivito-icon-box"]
+    c << self.size
+    c << self.style
+    c << self.background_color
+    c.join(' ')
+  end
+
+  def icon_classes
+    c = ["fa"]
+    c << "fa-#{self.icon}"
+    c << self.color
+    c.join(' ')
   end
 
   private
-  def self.fallback_colors
-    %w(transparent black gray light-gray red green blue yellow)
-  end
-
   def self.icon_list
     ["none", "plus","minus","warning","paw","send","car","sliders","tree","bell","certificate","cloud","comment","dashboard","female","male","flag","globe","heart","leaf","plane","refresh","rocket","question","star","unlock"]
   end
