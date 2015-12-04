@@ -3,17 +3,17 @@
 <% end %>
 
 <%= scrivito_details_for 'Size' do %>
-  <%= scrivito_toggle_button_editor(widget, :size) %>
+  <%= scrivito_tag(:div, widget, :size) %>
 <% end %>
 
 <%= scrivito_details_for 'Style' do %>
-  <%= scrivito_toggle_button_editor(widget, :style) %>
+  <%= scrivito_tag(:div, widget, :style) %>
 <% end %>
 
 <%= scrivito_details_for 'Icon Color' do %>
-  <%= render 'scrivito_advanced_editors/color_picker', widget: widget, attribute: :color  %>
+  <%= scrivito_tag :div, widget, :color, data: {colors_list: scrivito_selectable_color_classes('icon_box_widget', 'color')} %>
 <% end %>
 
 <%= scrivito_details_for 'Background Color' do %>
-  <%= render 'scrivito_advanced_editors/color_picker', widget: widget, attribute: :background_color  %>
+  <%= scrivito_tag :div, widget, :background_color, data: {colors_list: scrivito_selectable_color_classes('icon_box_widget', 'background_color')} %>
 <% end %>
