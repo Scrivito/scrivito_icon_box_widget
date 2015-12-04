@@ -14,14 +14,15 @@ class IconBoxWidget < Widget
   end
 
   def self.icons
-    IconBoxWidget.icon_list.map do |icon|
-      {
-        content: icon,
-        caption: "<i class='fa fa-#{icon}'></i>#{icon.present? ? icon : 'none'}".html_safe,
-        style: '',
-        css: 'icon-select'
-      }
+    IconBoxWidget.icon_list
+  end
+
+  def self.caption
+    elems = {}
+    IconBoxWidget.icon_list.each do |elem|
+      elems[elem] = "<i class='fa fa-#{elem}'></i>#{elem}".html_safe
     end
+    return elems
   end
 
   def background_classes
