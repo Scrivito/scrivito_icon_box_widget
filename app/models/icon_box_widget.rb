@@ -9,17 +9,17 @@ class IconBoxWidget < Widget
     if Obj.respond_to?('selectable_color_classes')
       Obj.selectable_color_classes(class_name, attribute)
     else
-      IconBoxWidget.fallback_colors
+      ['', 'black', 'gray', 'light-gray', 'red', 'green', 'blue', 'yellow']
     end
   end
 
   def self.icons
-    IconBoxWidget.icon_list
+    ["none", "plus","minus","warning","paw","send","car","sliders","tree","bell","certificate","cloud","comment","dashboard","female","male","flag","globe","heart","leaf","plane","refresh","rocket","question","star","unlock"]
   end
 
   def self.caption
     elems = {}
-    IconBoxWidget.icon_list.each do |elem|
+    IconBoxWidget.icons.each do |elem|
       elems[elem] = "<i class='fa fa-#{elem}'></i>#{elem}".html_safe
     end
     return elems
@@ -38,10 +38,5 @@ class IconBoxWidget < Widget
     c << "fa-#{self.icon}"
     c << self.color
     c.join(' ')
-  end
-
-  private
-  def self.icon_list
-    ["none", "plus","minus","warning","paw","send","car","sliders","tree","bell","certificate","cloud","comment","dashboard","female","male","flag","globe","heart","leaf","plane","refresh","rocket","question","star","unlock"]
   end
 end
