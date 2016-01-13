@@ -1,12 +1,10 @@
 # ScrivitoIconBox
 
-## Description
-
-A Widget for Scrivito showing an icon in a box. Color, Background color, the icon, size and the shape can be selected. For the icons, font awesome is used.
+A Scrivito widget showing an icon in a box. The icon color, background color, the icon, size and the shape can be selected. For the icons, Font Awesome is used.
 
 ## Installation
 
-Add this lines to your application's Gemfile:
+Add this line to your application's Gemfile:
 
     gem 'scrivito_icon_box_widget'
 
@@ -16,4 +14,4 @@ Add this line to your application stylesheet manifest:
 
 ## Customization
 
-We recomment to use [Scrivito Advanced Editors](https://github.com/Scrivito/scrivito_advanced_editors) for best usability. So you get a color picker and icon selector.
+We recommend to use [Scrivito Advanced Editors](https://github.com/Scrivito/scrivito_advanced_editors) to utilize the color picker and icon selector included in this gem.
