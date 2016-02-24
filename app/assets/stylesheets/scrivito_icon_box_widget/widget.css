@@ -22,8 +22,6 @@
 .scrivito-icon-box.circle,
 .scrivito-icon-box.square {
   background: transparent !important;
-  border-width: 3px;
-  border-style: solid;
 }
 
 .scrivito-icon-box.small i {
