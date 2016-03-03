@@ -20,12 +20,13 @@
   text-align: center;
 }
 
-.scrivito_dialog .icon-select .toggle_button_list .scrivito-toggle-button {
+.scrivito_dialog .icon-select .scrivito_enum_editor li {
   padding: 6px 18px;
   font-size: 10px;
   line-height: 10px;
   width: 81px;
   height: 51px;
+  text-align: center;
   .fa {
     font-size: 20px;
     display: block;
