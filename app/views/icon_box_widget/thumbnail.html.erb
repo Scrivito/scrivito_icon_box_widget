@@ -1,3 +1,3 @@
-<%= scrivito_thumbnail 'Icon Box', image_tag("widget_preview_icon.png") do %>
-  A Box to display an icon in specified color and shape.
+<%= scrivito_thumbnail t('scrivito_icon_box_widget.thumbnail.title', default: 'Icon Box'), image_tag("widget_preview_icon.png") do %>
+  <%= t('scrivito_icon_box_widget.thumbnail.description', default: 'A Box to display an icon in specified color and shape.') %>
 <% end %>

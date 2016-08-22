@@ -1,19 +1,19 @@
-<%= scrivito_details_for 'Icon' do %>
+<%= scrivito_details_for t('scrivito_icon_box_widget.details.icon', default: 'Icon') do %>
   <%= render 'icon_box_widget/partials/icons_picker', widget: widget, attribute: :icon %>
 <% end %>
 
-<%= scrivito_details_for 'Size' do %>
+<%= scrivito_details_for t('scrivito_icon_box_widget.details.size', default: 'Size') do %>
   <%= scrivito_tag(:div, widget, :size) %>
 <% end %>
 
-<%= scrivito_details_for 'Style' do %>
+<%= scrivito_details_for t('scrivito_icon_box_widget.details.style', default: 'Style') do %>
   <%= scrivito_tag(:div, widget, :style) %>
 <% end %>
 
-<%= scrivito_details_for 'Icon Color' do %>
+<%= scrivito_details_for t('scrivito_icon_box_widget.details.icon_color', default: 'Icon Color') do %>
   <%= scrivito_tag :div, widget, :color, data: {colors_list: scrivito_selectable_color_classes('icon_box_widget', 'color')} %>
 <% end %>
 
-<%= scrivito_details_for 'Background Color' do %>
+<%= scrivito_details_for t('scrivito_icon_box_widget.details.background_color', default: 'Background Color') do %>
   <%= scrivito_tag :div, widget, :background_color, data: {colors_list: scrivito_selectable_color_classes('icon_box_widget', 'background_color')} %>
 <% end %>
