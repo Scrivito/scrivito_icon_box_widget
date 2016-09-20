@@ -4,7 +4,7 @@
   border: 3px solid transparent;
 }
 
-.transparent {
+.transparent_bg {
   background-color: transparent !important;
   border-color: transparent !important;
 }
@@ -44,43 +44,57 @@
   border-color: #e1d00e !important;
 }
 
+.scrivito-icon-box-widget-icon-color .transparent_bg.scrivito-color-select:after {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+  text-shadow: none !important;
+}
+
 /* icon colors */
-i.transparent {
+i.transparent_bg,
+.scrivito-icon-box-widget-icon-color .transparent_bg.scrivito-color-select:after {
   background-color: transparent !important;
   color: transparent !important;
 }
 
-i.black {
+i.black,
+.scrivito-icon-box-widget-icon-color .black.scrivito-color-select:after {
   background-color: transparent !important;
   color: #33312d !important;
 }
 
-i.gray {
+i.gray,
+.scrivito-icon-box-widget-icon-color .gray.scrivito-color-select:after {
   background-color: transparent !important;
   color: #a0a0a0 !important;
 }
 
-i.light-gray {
+i.light-gray,
+.scrivito-icon-box-widget-icon-color .light-gray.scrivito-color-select:after {
   background-color: transparent !important;
   color: #eee !important;
 }
 
-i.red {
+i.red,
+.scrivito-icon-box-widget-icon-color .red.scrivito-color-select:after {
   background-color: transparent !important;
   color: #c5463f !important;
 }
 
-i.green {
+i.green,
+.scrivito-icon-box-widget-icon-color .green.scrivito-color-select:after {
   background-color: transparent !important;
   color: #439439 !important;
 }
 
-i.blue {
+i.blue,
+.scrivito-icon-box-widget-icon-color .blue.scrivito-color-select:after {
   background-color: transparent !important;
   color: #3f86ac !important;
 }
 
-i.yellow {
+i.yellow,
+.scrivito-icon-box-widget-icon-color .yellow.scrivito-color-select:after {
   background-color: transparent !important;
   color: #e1d00e !important;
 }

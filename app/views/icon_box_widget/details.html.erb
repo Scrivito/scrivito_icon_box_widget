@@ -11,7 +11,7 @@
 <% end %>
 
 <%= scrivito_details_for t('scrivito_icon_box_widget.details.icon_color', default: 'Icon Color') do %>
-  <%= scrivito_tag :div, widget, :color, data: {colors_list: scrivito_selectable_color_classes('icon_box_widget', 'color')} %>
+  <%= scrivito_tag :div, widget, :color, class: 'scrivito-icon-box-widget-icon-color', data: {colors_list: scrivito_selectable_color_classes('icon_box_widget', 'color'), scrivito_color_picker_show_text: true} %>
 <% end %>
 
 <%= scrivito_details_for t('scrivito_icon_box_widget.details.background_color', default: 'Background Color') do %>
