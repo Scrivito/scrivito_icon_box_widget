@@ -24,5 +24,4 @@ Gem::Specification.new do |s|
   ]
 
   s.add_dependency 'scrivito_sdk'
-  s.add_dependency 'font-awesome-rails'
 end
