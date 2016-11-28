@@ -39,6 +39,7 @@ ScrivitoIconBoxWidget.configure do |config|
   config.set = 'fa fa'
   config.selection = ['none', 'plus', 'minus', 'home', 'edit', 'leaf', ...]
   config.default = 'home'
+  config.all_icons_link = 'fortawesome.github.io/Font-Awesome/icons/'
 end
 ```
 

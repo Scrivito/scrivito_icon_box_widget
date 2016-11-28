@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    scrivito_icon_box_widget (2.0.0.dev1)
+    scrivito_icon_box_widget (2.0.0.dev2)
       scrivito_sdk
 
 GEM
