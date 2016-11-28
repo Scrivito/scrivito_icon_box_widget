@@ -1,4 +1,4 @@
-# ScrivitoIconBox
+# ScrivitoIconBoxWidget
 
 A Scrivito widget showing an icon in a box. The icon color, background color, the icon, size and the shape can be selected. For the icons, Font Awesome is used.
 
@@ -28,6 +28,18 @@ en:
       style: Style
       icon_color: Icon Color
       background_color: Background Color
+```
+
+## Configuration
+
+Add an initializer to define icon set or icon selection examples. This works with every Icon set that uses an pre-class to define the icons. For example using font awesome:
+
+```ruby
+ScrivitoIconBoxWidget.configure do |config|
+  config.set = 'fa fa'
+  config.selection = ['none', 'plus', 'minus', 'home', 'edit', 'leaf', ...]
+  config.default = 'home'
+end
 ```
 
 ## Customization
