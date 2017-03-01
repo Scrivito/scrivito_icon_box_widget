@@ -2,6 +2,7 @@ class IconBoxWidget < Widget
   attribute :icon, :string
   attribute :color, :string
   attribute :background_color, :string
+  attribute :label, :string
   attribute :size, :enum, values: ["small","medium","large"], default: 'large'
   attribute :style, :enum, values: ["circle","square","filled-circle","filled-square"], default: 'circle'
 

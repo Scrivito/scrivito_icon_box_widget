@@ -2,6 +2,10 @@
   <%= render 'icon_box_widget/partials/icons_picker', widget: widget, attribute: :icon %>
 <% end %>
 
+<%= scrivito_details_for t('scrivito_icon_box_widget.details.label', default: 'Label for accessibility') do %>
+  <%= scrivito_tag :div, widget, :label %>
+<% end %>
+
 <%= scrivito_details_for t('scrivito_icon_box_widget.details.size', default: 'Size') do %>
   <%= scrivito_tag(:div, widget, :size) %>
 <% end %>

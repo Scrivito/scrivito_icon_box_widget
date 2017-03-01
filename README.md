@@ -28,6 +28,7 @@ en:
       style: Style
       icon_color: Icon Color
       background_color: Background Color
+      label: Label for accessibility
 ```
 
 ## Configuration
