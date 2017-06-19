@@ -12,6 +12,14 @@ Add this line to your application stylesheet manifest:
 
     *= require scrivito_icon_box_widget
 
+If you use `sass-rails` for your application stylesheet manifest (e.g. `application.scss` or `application.css.scss`) add the following:
+
+``` css
+@import "scrivito_icon_box_widget/base";
+@import "scrivito_icon_box_widget/widget";
+@import "scrivito_icon_box_widget/colors";
+```
+
 ## Localization
 
 The following code represents the default localization for English. Copy it to your `en.yml` and change it if necessary:
